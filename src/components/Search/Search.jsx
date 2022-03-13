@@ -46,11 +46,10 @@ export default function Search({ parentCallback }) {
         onClick={() => {
           setSuggestionsData(suggestions)
         }}
-        onMouseOver={() => {
-          setSuggestionsData(suggestions)
-        }}
+        // onMouseOver={() => {
+        //   setSuggestionsData(suggestions)
+        // }}
         onMouseOut={() => {
-          // setSuggestionsData(suggestions)
           setSuggestionsData([])
         }}
         // onBlur={() => {
