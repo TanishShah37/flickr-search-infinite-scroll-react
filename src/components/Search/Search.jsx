@@ -17,7 +17,7 @@ export default function Search({ parentCallback }) {
    */
 
   function debounce() {
-    let timer;
+    let timer
 
     function fn() {
       clearTimeout(timer)
@@ -46,12 +46,9 @@ export default function Search({ parentCallback }) {
         onClick={() => {
           setSuggestionsData(suggestions)
         }}
-        // onMouseOver={() => {
-        //   setSuggestionsData(suggestions)
+        // onMouseOut={() => {
+        //   setSuggestionsData([])
         // }}
-        onMouseOut={() => {
-          setSuggestionsData([])
-        }}
         // onBlur={() => {
         //   setSuggestionsData([])
         // }}
