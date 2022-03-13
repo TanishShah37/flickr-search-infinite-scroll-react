@@ -22,20 +22,19 @@ export default function ShowModal({ path, popimage, callback }) {
       <div className={`modal ${image && 'show'}`} tabIndex="-1" role="dialog">
         <div className="modal-dialog" role="document">
           <div className="modal-content">
-            <div className="modal-body">
-              <p>
-                <img src={path}></img>
-              </p>
-            </div>
-            <div className="modal-footer">
-              <button
+          <button
                 type="button"
                 className="modalButton"
                 onClick={closeModal}
               >
                 X
               </button>
+            <div className="modal-body">
+              <p>
+                <img alt={path} src={path}></img>
+              </p>
             </div>
+        
           </div>
         </div>
       </div>
